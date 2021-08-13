@@ -1,9 +1,17 @@
 /*
-店铺签到，各类店铺签到，有新的店铺直接添加token即可
-搬运cui521大佬脚本，请勿外传！！！
-
-jd_babel_diy_zeus
-*/
+店铺签到
+==============Quantumult X==============
+[task_local]
+#店铺签到
+32 2 * * * jd_diy_zeus.js, tag=店铺签到, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png, enabled=true
+==============Loon==============
+[Script]
+cron "32 2 * * *" script-path=jd_diy_zeus.js,tag=店铺签到
+================Surge===============
+店铺签到 = type=cron,cronexp="32 2 * * *",wake-system=1,timeout=3600,script-path=jd_diy_zeus.js
+===============小火箭==========
+店铺签到 = type=cron,jd_diy_zeus.js, cronexpr="32 2 * * *", timeout=3600, enable=true
+ */
 const $ = new Env('店铺签到');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
