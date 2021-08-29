@@ -1,3 +1,7 @@
+/*
+京东取关店铺
+cron 33 6-22/2 * * * jd_unfollowShop.js
+*/
 let common = require("./function/common");
 let $ = new common.env('京东取关店铺');
 let min = 2,
