@@ -1,6 +1,3 @@
-/*
-cron 24 */6 * * * jd_jump.js
-*/
 const $ = new Env('跳跳乐');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 // $.helpCodeList = [];
