@@ -1,6 +1,6 @@
 /*
 如需运行请自行添加环境变量：JD_TRY，值填 true 即可运行
-cron 10 11,15,19 * * * jd_try.js
+cron 10 11,15,19,23 * * * jd_try.js
  */
 const $ = new Env('京东试用')
 const URL = 'https://api.m.jd.com/client.action'
@@ -101,7 +101,7 @@ let args_xh = {
      * 例如是18件，将会进行第三次获取，直到过滤完毕后为20件才会停止，不建议设置太大
      * 可设置环境变量：JD_TRY_MAXLENGTH
      * */
-    maxLength: process.env.JD_TRY_MAXLENGTH * 1 || 200,
+    maxLength: process.env.JD_TRY_MAXLENGTH * 1 || 100,
     /*
      * 过滤种草官类试用，某些试用商品是专属官专属，考虑到部分账号不是种草官账号
      * 例如A商品是种草官专属试用商品，下面设置为true，而你又不是种草官账号，那A商品将不会被添加到待提交试用组
