@@ -1,6 +1,6 @@
 /*
 如需运行请自行添加环境变量：JD_TRY，值填 true 即可运行
-cron 10 11,15,19,23 * * * jd_try.js
+cron 10 11,15,19,23 * * * jd_tryy.js
  */
 const $ = new Env('京东试用')
 const URL = 'https://api.m.jd.com/client.action'
