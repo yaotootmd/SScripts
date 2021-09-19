@@ -1,7 +1,5 @@
 /*
-tgchannel：https://t.me/Ariszy8028
-github：https://github.com/Ariszy/Private-Script
-boxjs：https://raw.githubusercontent.com/Ariszy/Private-Script/master/Ariszy.boxjs.json
+cron 57 9,20 * * * ddwj.js
 */
 const $ = new Env('东东玩家')
 const notify = $.isNode() ?require('./sendNotify') : '';
