@@ -1,23 +1,3 @@
-/**
- 更新时间：2021-06-31
- 已支持IOS双京东账号,Node.js支持N个京东账号
- 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
- ==========================Quantumultx=========================
- [task_local]
- #嗯
- * * * * * jd_logout.js, tag=嗯, img-url=https://raw.githubusercontent.com/JDHelloWorld/jd_scripts/main/icon/jd_logout.png, enabled=true
- =========================Loon=============================
- [Script]
- cron "* * * * *" script-path=jd_logout.js,tag=嗯
-
- =========================Surge============================
- 嗯 = type=cron,cronexp="* * * * *",wake-system=1,timeout=3600,script-path=jd_logout.js
-
- =========================小火箭===========================
- 嗯 = type=cron,script-path=jd_logout.js, cronexpr="* * * * *", timeout=3600, enable=true
-
- */
-
 const $ = new Env('嗯嗯');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [], cookie = '', message;
